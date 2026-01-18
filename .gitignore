@@ -1,6 +1,3 @@
-data/
-.env
 env/
 venv/
-*.sql
-*.csv
+
