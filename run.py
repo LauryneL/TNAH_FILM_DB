@@ -202,8 +202,8 @@ if __name__ == "__main__":
 
         if engine:
             loader = DataLoader(engine)
-            loader.load_sql_files("sql")
             loader.load_csv_files("csv")
+            loader.load_sql_files("sql")
     else:
         Logger("Main").error("Variable pgDatabase manquante dans .env")
         exit()
