@@ -1,7 +1,7 @@
 greenlet==3.2.4
 numpy==2.3.5
 pandas==2.3.3
-psycopg2==2.9.11
+psycopg2-binary==2.9.11
 python-dateutil==2.9.0.post0
 python-dotenv==1.2.1
 pytz==2025.2
