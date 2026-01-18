@@ -48,7 +48,20 @@ failOnFirstCsvError=bool
 - `failOnFirstSqlError` : si `True`, le script s’arrête dès qu’une requête SQL échoue  
 - `failOnFirstCsvError` : si `True`, le script s’arrête dès qu’un import CSV dans la base de données échoue  
 
-### 2. Lancer le script principal
+### 2. Créer la base de données et le schéma
+Dans DBeaver, exécuter deux requêtes qui permettront de créer une base de données et un schéma dédié. Les informations que vous transmettez à SQL doivent correspondre aux éléments `pgDatabase` et `pgSchemaImportsCsv` du fichier .env.
+
+Créer une nouvelle base de données 
+```sql
+CREATE DATABASE {database_name} ;
+```
+
+Créer un nouveau schéma
+```sql
+CREATE SCHEMA {schema_name} ;
+```
+
+### 3. Lancer le script principal
 ```bash
 python run.py
 ```
